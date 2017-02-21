@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedFunctions", "UserDefinedFunctions\UserDefinedFunctions.csproj", "{11C05D89-28A1-4B5C-9FD0-D10DE5175869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserDefinedFunctionsTestProject", "UserDefinedFunctionsTestProject\UserDefinedFunctionsTestProject.csproj", "{D32386B3-53D1-42DE-A923-4E40DF5040AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11C05D89-28A1-4B5C-9FD0-D10DE5175869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C05D89-28A1-4B5C-9FD0-D10DE5175869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C05D89-28A1-4B5C-9FD0-D10DE5175869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C05D89-28A1-4B5C-9FD0-D10DE5175869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32386B3-53D1-42DE-A923-4E40DF5040AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32386B3-53D1-42DE-A923-4E40DF5040AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D32386B3-53D1-42DE-A923-4E40DF5040AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D32386B3-53D1-42DE-A923-4E40DF5040AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
