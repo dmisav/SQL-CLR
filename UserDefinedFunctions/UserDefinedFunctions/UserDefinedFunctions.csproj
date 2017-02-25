@@ -43,6 +43,7 @@
     <Compile Include="UserDefinedFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserDefinedStoredProcedures.cs" />
+    <Compile Include="UserDefinedTriggers.cs" />
     <Compile Include="UserDefinedTypes.cs" />
   </ItemGroup>
   <ItemGroup />
@@ -53,6 +54,7 @@
     <Content Include="SQL\Functions\SplitStringCLR.sql" />
     <Content Include="SQL\Functions\UniqueValidation.sql" />
     <Content Include="SQL\Procedures\PriceSum.sql" />
+    <Content Include="SQL\Triggers\NotifyTrigger.sql" />
     <Content Include="SQL\Types\create type.sql" />
     <Content Include="SQL\Types\example usage.sql" />
   </ItemGroup>

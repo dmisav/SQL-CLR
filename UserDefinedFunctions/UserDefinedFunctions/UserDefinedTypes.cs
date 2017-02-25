@@ -1,10 +1,6 @@
 ﻿using Microsoft.SqlServer.Server;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlTypes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserDefinedFunctions
 {
@@ -15,7 +11,6 @@ namespace UserDefinedFunctions
         private Int32 m_x;
         private Int32 m_y;
         private bool is_Null;
-
 
         public Int32 X
         {
@@ -29,7 +24,6 @@ namespace UserDefinedFunctions
             }
         }
 
-
         public Int32 Y
         {
             get
@@ -42,7 +36,6 @@ namespace UserDefinedFunctions
             }
         }
 
-
         public bool IsNull
         {
             get
@@ -50,7 +43,6 @@ namespace UserDefinedFunctions
                 return is_Null;
             }
         }
-
 
         public static Point Null
         {
@@ -61,7 +53,6 @@ namespace UserDefinedFunctions
                 return (pt);
             }
         }
-
 
         public override string ToString()
         {
@@ -74,7 +65,6 @@ namespace UserDefinedFunctions
                 return this.m_x + ":" + this.m_y;
             }
         }
-
 
         public static Point Parse(SqlString s)
         {
@@ -92,7 +82,6 @@ namespace UserDefinedFunctions
             pt.Y = Convert.ToInt32(xy[1]);
             return (pt);
         }
-
 
         public SqlString Quadrant()
         {
@@ -132,5 +121,4 @@ namespace UserDefinedFunctions
             return stringReturn;
         }
     }
-
 }
