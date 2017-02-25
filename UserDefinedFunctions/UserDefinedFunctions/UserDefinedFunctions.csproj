@@ -50,6 +50,7 @@
     <Content Include="SQL\Functions\exampleUsage.sql" />
     <Content Include="SQL\Functions\SplitString.sql" />
     <Content Include="SQL\Functions\SplitStringCLR.sql" />
+    <Content Include="SQL\Functions\UniqueValidation.sql" />
     <Content Include="SQL\Types\create type.sql" />
     <Content Include="SQL\Types\example usage.sql" />
   </ItemGroup>
