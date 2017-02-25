@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Data.SqlTypes;
 
 namespace UserDefinedFunctions
@@ -26,6 +27,30 @@ namespace UserDefinedFunctions
 
             valueIndex = keyValuePair.Key;
             value = keyValuePair.Value;
+        }
+
+
+        [SqlFunction(DataAccess = DataAccessKind.Read)]
+        public static SqlBoolean UniqueValidation(SqlString username)
+        {
+            SqlBoolean returnValue = false;           
+
+            using (SqlConnection conn = new SqlConnection("context connection=true"))
+            {
+                conn.Open();
+                using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [AdventureWorks2012].[HumanResources].[Employee] " +
+                                                       "WHERE [LoginID] = @param", conn))
+                {
+                    cmd.Parameters.AddWithValue("@param", username);
+                    var  rowCount = (int)cmd.ExecuteScalar();
+
+                    if (rowCount == 0)
+                        returnValue = true;
+
+                    conn.Close();
+                }
+            }
+            return returnValue;
         }
     }
 }
